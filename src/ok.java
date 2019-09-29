@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.util.Arrays;
+import java.util.Stack;
 
 public class ok {
 
@@ -83,18 +84,33 @@ public class ok {
     }
 
 
-String [] strings = {"a","b","c","d"};
+public static void stringsmetode() {
+
+
+    String[] strings = {"a", "b", "c", "d"};
 
     /**
      * Antar:
-     * 1) 4 elementer som tar 4 hyller i RAM, altså 4*4 bit = 16 bytes lagring
+     * 4 elementer som tar 4 hyller i RAM, altså 4*4 bit = 16 bytes lagring
+     *
+     * ArrayList.add(Object o); // Append the list   O(1)
+     * ArrayList.remove(int index); // Remove list[index] O(n)
+     * ArrayList.remove(0); // Remove first element O(1)
+     * ArrayList.add(int index, Object o); // Prepend the list O(n) da indeksene må shiftes om element for elemtn
+     *
+     * LinkedList.addLast(); // Or just LinkedList.add();
+     * LinkedList.pollLast();
+     * LinkedList.pollFirst();
+     * LinkedList.addFirst();
+     *
      */
-
+    }
 
 
     public static void main(String[] args) {
-        int [] box = {1,2,3,4,5};
-    printAllNumbersThenAllPariSum(box);
+
+
+
 
 
 
